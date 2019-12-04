@@ -24,7 +24,6 @@ function getChapter(filename)
             local number = tonumber(string.match(data,"{(%d+)}"))
             local bind = pBindString(0,number)
             data = string.gsub(data,"{" .. number .. "}", '<span class="hotkey">'..bind..'</span>')
-            print(number)
         end
     end
     return data
@@ -62,7 +61,6 @@ AddEventHandler ('omghalp:chapter-list', function(chapters)
         })
     end
     if Config.CoverPage then
-        print('There is a cover page!')
         SendNUIMessage({
             type = "setChapter",
             setCurrent = Config.CoverPage,
