@@ -88,6 +88,6 @@ document.addEventListener( "DOMContentLoaded", ()=>{
     }, true);
 }, false );
 
-document.addEventListener( "keypress", (event)=>{
+document.addEventListener( "keydown", (event)=>{
     hide();
 });
