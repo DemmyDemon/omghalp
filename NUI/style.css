@@ -12,7 +12,7 @@
 }
 #chapterlist {
     font-family: 'Poppins', sans-serif;
-    display: inline-block;
+    display: block;
     float: left;
     height: 100%;
     box-sizing: border-box;
